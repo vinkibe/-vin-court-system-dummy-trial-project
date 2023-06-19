@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Files</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <nav class="top-navigation">
+    <h1>Case Files</h1>
+    <button id="add-case-btn" class="add-btn"><i class="fas fa-plus"></i> Add</button>
+  </nav>
+
+  <div class="case-container">
+    <div class="case">
+      <input type="button" value="View Details" class="view-details-btn" onclick="openCaseDetails('Case1')">
+      <h2>Case ID: Case1</h2>
+      <p>Example details for Case 1</p>
+    </div>
+    <div class="case">
+      <input type="button" value="View Details" class="view-details-btn" onclick="openCaseDetails('Case2')">
+      <h2>Case ID: Case2</h2>
+      <p>Example details for Case 2</p>
+    </div>
+    <div class="case">
+      <input type="button" value="View Details" class="view-details-btn" onclick="openCaseDetails('Case3')">
+      <h2>Case ID: Case3</h2>
+      <p>Example details for Case 3</p>
+    </div>
+    <div class="case">
+      <input type="button" value="View Details" class="view-details-btn" onclick="openCaseDetails('Case4')">
+      <h2>Case ID: Case4</h2>
+      <p>Example details for Case 4</p>
+    </div>
+  </div>
+
+  <footer class="bottom-navigation">
+    <p>Here is the footer</p>
+  </footer>
+
+  <div class="overlay"></div>
+  <div class="case-details-popup">
+    <button class="close-btn"><i class="fas fa-times"></i></button>
+    <h1>Input Your Case</h1>
+    <form id="case-form">
+      <label for="case-name">Case Name:</label>
+      <input type="text" id="case-name" name="case-name" required>
+      <label for="case-details">Case Details:</label>
+      <textarea id="case-details" name="case-details" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
